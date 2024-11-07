@@ -6,9 +6,9 @@
 main {
     font-family: 'Poppins', sans-serif;
 }
-.formulär {
+.form {
     display: flex;
-    
+
 }
 h2 {
     font-weight: 500;
