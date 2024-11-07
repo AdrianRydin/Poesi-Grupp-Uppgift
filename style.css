@@ -17,13 +17,16 @@
 header {
   width: 100vw;
   height: 20vh;
-  background-color: #4c4345;
+  background-color: var(--COLOR-DARK);
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-header :nth-child(1) {
-  border: 1px solid red;
+.opening-times{
+background-color: #D9D9D9;
+width: 100%;
+display: flex;
+justify-content: space-evenly;
 }
 .logo {
   width: 5rem;
