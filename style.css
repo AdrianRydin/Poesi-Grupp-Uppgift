@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* VARIABLER */
+:root {
+  --COLOR-RED: #e94f37;
+  --COLOR-PINK: #ffcde5;
+  --COLOR-DARK: #4c4345;
+  --COLOR-BLUE: #3185fc;
+}
+
+.section {
+  margin: 1rem;
+}
+
+.arrow-link {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--COLOR-PINK);
+  border-radius: 50%;
+  box-shadow: -1px 1px 2px var(--COLOR-DARK);
+}
