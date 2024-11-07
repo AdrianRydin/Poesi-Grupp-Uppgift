@@ -1,9 +1,17 @@
+/* GENERAL */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* VARIABLER */
@@ -14,6 +22,19 @@
   --COLOR-BLUE: #3185fc;
 }
 
+/* TEXT-STYLING */
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+h2,
+h3 {
+  color: var(--COLOR-DARK);
+  margin: 0.5rem 0;
+}
+
+/* HEADER */
+
 header {
   width: 100vw;
   height: 20vh;
@@ -22,16 +43,19 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-.opening-times{
-background-color: #D9D9D9;
-width: 100%;
-display: flex;
-justify-content: space-evenly;
+
+.opening-times {
+  background-color: #d9d9d9;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
+
 .logo {
   width: 5rem;
   height: 5rem;
 }
+
 .header-title {
   color: white;
   display: flex;
@@ -45,9 +69,53 @@ justify-content: space-evenly;
   color: white;
 }
 
+/* MAIN */
+
+.main {
+  background-color: var(--COLOR-PINK);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .section {
+  padding: 1rem;
+  max-width: 40rem;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-info {
   margin: 1rem;
 }
+
+.evenemang__event {
+  margin-top: 1rem;
+  box-shadow: -1px 1px 2px var(--COLOR-DARK);
+  display: flex;
+  flex-direction: column;
+}
+
+.event-picture {
+  width: 100%;
+  align-self: center;
+}
+
+.lr-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+hr {
+  border-top: 1px solid var(--COLOR-RED);
+  width: 80%;
+}
+
+/* BUTTONS */
 
 .arrow-link {
   width: 2rem;
@@ -55,4 +123,14 @@ justify-content: space-evenly;
   background-color: var(--COLOR-PINK);
   border-radius: 50%;
   box-shadow: -1px 1px 2px var(--COLOR-DARK);
+}
+
+.button--blue {
+  font: inherit;
+  background-color: var(--COLOR-BLUE);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8em;
+  margin: 1rem;
 }
