@@ -41,9 +41,32 @@ justify-content: space-evenly;
   font-size: 0.8rem;
   flex-wrap: wrap;
 }
-.menu {
-  color: white;
+
+
+.hamburger-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--COLOR-DARK);
+    z-index: 999;
+    position:fixed;
+    top: 0;
+    transform: translateX(100%);
 }
+.hamburger-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    line-height: 0rem;
+    height: 80vh;
+    font-size: 20px;
+}
+.hamburger-menu a{
+    color: white;
+    text-decoration: none;
+}
+
 
 .section {
   margin: 1rem;

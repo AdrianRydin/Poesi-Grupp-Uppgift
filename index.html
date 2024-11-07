@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
     />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -25,11 +26,21 @@
         <h2 class="poppins-regular">Pärmar & Poesi</h2>
         <p class="poppins-light">Bokhandel</p>
       </section>
-      <nav>
+      <nav class="menu">
         <img
           src="/img/menu_46dp_E8EAED_FILL0_wght400_GRAD0_opsz48.svg"
           alt="menu-icon"
         />
+      </nav>
+      <nav class="hamburger-container" id="menuContainer">
+        <img src="/img/close_40dp_E8EAED_FILL0_wght400_GRAD0_opsz40.svg" alt="close-menu">
+        <section class="hamburger-menu poppins-light">
+            <a href="#evenemang">Evenemang</a>
+            <a href="#nytt-hos-oss">Nytt hos oss</a>
+            <a href="#personalen-tipsar">Personalen tipsar</a>
+            <a href="#Formulär">Vill du veta mer?</a>
+            <a href="#Footer">Sociala medier</a>
+        </section>
       </nav>
     </header>
     <section class="opening-times poppins-light">
