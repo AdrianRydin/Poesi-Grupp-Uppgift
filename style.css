@@ -20,6 +20,7 @@ figure img {
   --COLOR-PINK: #ffcde5;
   --COLOR-DARK: #4c4345;
   --COLOR-BLUE: #3185fc;
+  --SHADOW: -1px 1px 2px var(--COLOR-DARK);
 }
 
 /* TEXT-STYLING */
@@ -94,7 +95,7 @@ header {
 
 .evenemang__event {
   margin-top: 1rem;
-  box-shadow: -1px 1px 2px var(--COLOR-DARK);
+  box-shadow: var(--SHADOW);
   display: flex;
   flex-direction: column;
 }
@@ -104,10 +105,28 @@ header {
   align-self: center;
 }
 
+.new_books__image {
+  width: 40%;
+  margin: 0.3rem;
+  box-shadow: var(--SHADOW);
+}
+
+.personalen-tipsar__image {
+  width: 40%;
+  margin: 1rem;
+  box-shadow: var(--SHADOW);
+}
+
 .lr-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
+}
+
+.row-wrap {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 hr {
@@ -122,11 +141,12 @@ hr {
   height: 2rem;
   background-color: var(--COLOR-PINK);
   border-radius: 50%;
-  box-shadow: -1px 1px 2px var(--COLOR-DARK);
+  box-shadow: var(--SHADOW);
 }
 
 .button--blue {
   font: inherit;
+  min-width: 8rem;
   background-color: var(--COLOR-BLUE);
   color: white;
   border: none;
