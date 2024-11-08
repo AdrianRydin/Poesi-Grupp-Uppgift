@@ -174,10 +174,16 @@ form {
     margin: 0 auto;
     max-width: 40rem;
 }
+label {
+    color: var(--COLOR-DARK);
+}
+span {
+    color: var(--COLOR-RED);
+}
 input {
     width: 100%;
     height: 2.5rem;
-    border: solid black;
+    border: 1px solid var(--COLOR-DARK);
     border-radius: 10px;
     font: inherit;
     padding-left: 10px;
@@ -185,22 +191,14 @@ input {
 }
 textarea {
     width: 100%;
-    border: 1.5px solid black;
+    border: 1px solid var(--COLOR-DARK);
     border-radius: 10px;
     font: inherit;
     padding-left: 10px;
     padding-top: 8px;
     margin-bottom: 1rem;
 }
-.button--blue {
-    font: inherit;
-    background-color: var(--COLOR-BLUE);
-    color: white;
-    border: none;
-    border-radius: 1rem;
-    padding: 0.8em;
-    margin: 1rem;
-  }
+
   .aligncenter {
     align-self: center;
   }
