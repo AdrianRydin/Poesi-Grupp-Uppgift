@@ -26,6 +26,7 @@ figure img {
 /* TEXT-STYLING */
 html {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 h2,
@@ -137,6 +138,20 @@ header {
 .menu {
   color: white;
 }
+
+
+.desktop-nav{
+  display: flex;
+  gap: 1rem;
+  max-width: 50%;
+  font-size: large;
+
+}
+.desktop-nav a{
+  color: white;
+  text-decoration: none;
+}
+
 
 /* MAIN */
 
@@ -293,3 +308,22 @@ textarea {
   .aligncenter {
     align-self: center;
   }
+
+  @media screen and (max-width: 992px){
+    .desktop-nav{
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 992px){
+    .hamburger{
+      display: none;
+    }
+
+  }
+
+@media screen and (min-width: 1200px){
+  .desktop-nav{
+    gap: 3rem;
+  }
+}
