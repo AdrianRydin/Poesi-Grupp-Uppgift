@@ -142,7 +142,7 @@ header {
 }
 
 .desktop-nav {
-  display: flex;
+  display: none;
   gap: 1rem;
   max-width: 50%;
   font-size: large;
@@ -300,15 +300,18 @@ textarea {
   margin: 1rem;
 }
 
-@media screen and (max-width: 992px) {
-  .desktop-nav {
-    display: none;
+@media (prefers-reduced-motion) {
+  html{
+    scroll-behavior: auto;
   }
 }
 
 @media screen and (min-width: 992px) {
   .hamburger {
     display: none;
+  }
+  .desktop-nav{
+    display: flex;
   }
 }
 
