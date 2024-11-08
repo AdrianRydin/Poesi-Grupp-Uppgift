@@ -39,15 +39,26 @@
 
       <nav class="mobile-nav">
         
-            <a href="#evenemang" class="link-list">Evenemang</a>
-            <a href="#nytt-hos-oss" class="link-list">Nytt hos oss</a>
-            <a href="#personalen-tipsar" class="link-list">Personalen tipsar</a>
-            <a href="#Formulär" class="link-list">Vill du veta mer?</a>
-            <a href="#Footer" class="link-list">Sociala medier</a>
+            <a href="#evenemang">Evenemang</a>
+            <a href="#nytt-hos-oss">Nytt hos oss</a>
+            <a href="#personalen-tipsar">Personalen tipsar</a>
+            <a href="#kontaktform">Vill du veta mer?</a>
+            <a href="#footer">Sociala medier</a>
+
+      </nav>
+
+      <nav class="desktop-nav">
+            <a href="#evenemang">Evenemang</a>
+            <a href="#nytt-hos-oss">Nytt hos oss</a>
+            <a href="#personalen-tipsar">Personalen tipsar</a>
+            <a href="#kontaktform">Vill du veta mer?</a>
+            <a href="#footer">Sociala medier</a>
+
 
       </nav>
 
     </header>
+
 
     <section class="opening-times poppins-light">
       <p>Öppettider: 10.00 - 18.00</p>
@@ -170,31 +181,25 @@
         <hr />
       </section>
 
-      <section class="kontaktform">
+      <section class="kontaktform" id="kontaktform">
         <h2 class="aligncenter">Intresserad av att veta mer?</h2>
         <form>
-          <label for="namn">*Namn</label>
-          <input type="text" id="namn" name="namn" placeholder="Namn" />
-          <label for="epost">*E-postadress</label>
-          <input
-            type="email"
-            id="epost"
-            name="epost"
-            placeholder="E-postadress"
-          />
+          <label for="namn"><span>*</span>Namn</label>
+          <input type="text" id="namn" name="namn" placeholder="Namn">
+          <label for="epost"><span>*</span>E-postadress</label>
+          <input type="email" id="epost" name="epost" placeholder="E-postadress">
           <label for="meddelande">Meddelande</label>
-          <textarea
-            id="meddelande"
-            name="meddelande"
-            rows="5"
-            placeholder="Meddelande"
-          ></textarea>
+          <textarea id="meddelande" name="meddelande" rows="5" placeholder="Meddelande"></textarea>
+          <aside>
+          <input type="checkbox" id="nyhetsbrev" value="nyhetsbrev" checked>
+          <label for="nyhetsbrev">Prenumerera på nyhetsbrev</label>
+        </aside>
         </form>
         <button type="submit" class="button--blue aligncenter">Skicka</button>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="contact">
         <h2>Kontakt</h2>
         <p>070-000-00-00</p>

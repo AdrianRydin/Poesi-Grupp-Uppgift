@@ -2,6 +2,7 @@ window.onload = function() {
 
 
     const menu_btn = document.querySelector('.hamburger');
+
     const mobile_menu = document.querySelector('.mobile-nav');
     const link_list = document.querySelector('.link-list');
     
@@ -13,13 +14,14 @@ window.onload = function() {
         
     });
 
-    link_list.addEventListener('click', function(){
-        menu_btn.classList.toggle('is-active');
-        mobile_menu.classList.toggle('is-active');
-    })
-    
+    mobile_menu.addEventListener('click', function(){
+        if(event.target instanceof HTMLAnchorElement){
+            menu_btn.classList.toggle('is-active');
+            mobile_menu.classList.toggle('is-active');
 
- 
+        }
+    })
+
 
 
 }
