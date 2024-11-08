@@ -1,3 +1,5 @@
+/* GENERAL */
+
 *,
 *::before,
 *::after {
@@ -6,13 +8,33 @@
   padding: 0;
 }
 
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* VARIABLER */
 :root {
   --COLOR-RED: #e94f37;
   --COLOR-PINK: #ffcde5;
   --COLOR-DARK: #4c4345;
   --COLOR-BLUE: #3185fc;
+  --SHADOW: -1px 1px 2px var(--COLOR-DARK);
 }
+
+/* TEXT-STYLING */
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+h2,
+h3 {
+  color: var(--COLOR-DARK);
+  margin: 0.5rem 0;
+}
+
+/* HEADER */
 
 header {
   width: 100vw;
@@ -22,16 +44,19 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-.opening-times{
-background-color: #D9D9D9;
-width: 100%;
-display: flex;
-justify-content: space-evenly;
+
+.opening-times {
+  background-color: #d9d9d9;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
+
 .logo {
   width: 5rem;
   height: 5rem;
 }
+
 .header-title {
   color: white;
   display: flex;
@@ -45,14 +70,87 @@ justify-content: space-evenly;
   color: white;
 }
 
+/* MAIN */
+
+.main {
+  background-color: var(--COLOR-PINK);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .section {
+  padding: 1rem;
+  max-width: 40rem;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-info {
   margin: 1rem;
 }
+
+.evenemang__event {
+  margin-top: 1rem;
+  box-shadow: var(--SHADOW);
+  display: flex;
+  flex-direction: column;
+}
+
+.event-picture {
+  width: 100%;
+  align-self: center;
+}
+
+.new_books__image {
+  width: 40%;
+  margin: 0.3rem;
+  box-shadow: var(--SHADOW);
+}
+
+.personalen-tipsar__image {
+  width: 40%;
+  margin: 1rem;
+  box-shadow: var(--SHADOW);
+}
+
+.lr-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-wrap {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+hr {
+  border-top: 1px solid var(--COLOR-RED);
+  width: 80%;
+}
+
+/* BUTTONS */
 
 .arrow-link {
   width: 2rem;
   height: 2rem;
   background-color: var(--COLOR-PINK);
   border-radius: 50%;
-  box-shadow: -1px 1px 2px var(--COLOR-DARK);
+  box-shadow: var(--SHADOW);
+}
+
+.button--blue {
+  font: inherit;
+  min-width: 8rem;
+  background-color: var(--COLOR-BLUE);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8em;
+  margin: 1rem;
 }
