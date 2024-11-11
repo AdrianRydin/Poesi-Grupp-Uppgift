@@ -4,7 +4,6 @@ window.onload = function() {
     const menu_btn = document.querySelector('.hamburger');
 
     const mobile_menu = document.querySelector('.mobile-nav');
-    const link_list = document.querySelector('.link-list');
     
     menu_btn.addEventListener('click', function() {
         menu_btn.classList.toggle('is-active');
