@@ -14,6 +14,10 @@ figure img {
   display: block;
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
 /* VARIABLER */
 :root {
   --COLOR-RED: #e94f37;
@@ -268,7 +272,7 @@ label {
   color: var(--COLOR-DARK);
 }
 
-span {
+.red-text {
   color: var(--COLOR-RED);
 }
 
@@ -280,6 +284,11 @@ input {
   font: inherit;
   padding-left: 10px;
   margin-bottom: 1.5rem;
+}
+
+.number-input {
+  margin-left: 0.6rem;
+  max-width: 3.5rem;
 }
 
 textarea {
@@ -323,8 +332,59 @@ textarea {
   margin: 1rem;
 }
 
+.button--pink {
+  font: inherit;
+  min-width: 8rem;
+  background-color: var(--COLOR-PINK);
+  color: var(--COLOR-RED);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8em;
+  margin: 1rem;
+}
+
+/* EVENT MORE INFO PAGE */
+
+.evenemang__event {
+  margin-bottom: 1rem;
+}
+
+.event-page-text {
+  padding: 1rem;
+}
+
+.event-page-text h3 {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+}
+
+.event-page-text p {
+  margin-top: 1rem;
+}
+
+.event-page-text blockquote {
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+.event-page-text > .lr-container {
+  flex-wrap: wrap-reverse;
+  align-items: flex-start;
+  font-weight: 500;
+  font-size: 1.1rem;
+  gap: 0.6rem;
+}
+
+.address {
+  font-style: normal;
+  margin-top: 0.6rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* MEDIA QUERIES */
+
 @media (prefers-reduced-motion) {
-  html{
+  html {
     scroll-behavior: auto;
   }
 }
@@ -333,7 +393,7 @@ textarea {
   .hamburger {
     display: none;
   }
-  .desktop-nav{
+  .desktop-nav {
     display: flex;
   }
   .opening-times{
