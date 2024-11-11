@@ -326,4 +326,11 @@ textarea {
   .desktop-nav{
     gap: 3rem;
   }
+  .header-title{
+    font-size:large
+  }
+  .logo {
+    width: 6rem;
+    height: 6rem;
+  }
 }
