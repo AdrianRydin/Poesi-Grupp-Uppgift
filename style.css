@@ -283,6 +283,9 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  max-width: 40rem;
+
+
 }
 
 .kontaktform aside {
@@ -291,7 +294,7 @@ hr {
   align-content: center;
   justify-content: center;
   gap: 0.7rem;
-}
+} 
 
 form {
   width: 100%;
@@ -365,7 +368,7 @@ textarea {
   margin: 1rem;
 }
 
-/* @media (prefers-reduced-motion) {
+@media (prefers-reduced-motion) {
   html{
     scroll-behavior: auto;
   }
@@ -390,7 +393,14 @@ textarea {
   .evenemang{
     display: none;
   }
-
+  
+  .kontaktform{
+    width: 80%;
+    max-width: 80%;
+  }
+form{
+    max-width: 80%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -405,7 +415,8 @@ textarea {
   .opening-times p{
     font-size: 1.2rem;
   }
-} */
+  
+} 
 
 
 
