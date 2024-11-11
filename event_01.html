@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="event.css">
     <link rel="icon" type="image/png" href="/img/file.PNG" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +26,9 @@
   </head>
   <body>
     <header>
-      <img src="/img/file.PNG" alt="logo" class="logo" />
+      <a href="index.html">
+        <img src="/img/file.PNG" alt="logo" class="logo" />
+      </a>
 
       <section class="header-title">
         <h1 class="poppins-regular">Pärmar & Poesi</h1>
@@ -37,19 +40,19 @@
       </button>
 
       <nav class="mobile-nav">
-        <a href="#evenemang">Evenemang</a>
-        <a href="#nytt-hos-oss">Nytt hos oss</a>
-        <a href="#personalen-tipsar">Personalen tipsar</a>
-        <a href="#kontaktform">Vill du veta mer?</a>
-        <a href="#footer">Sociala medier</a>
+        <a href="/index.html#evenemang">Evenemang</a>
+        <a href="/index.html#nytt-hos-oss">Nytt hos oss</a>
+        <a href="/index.html#personalen-tipsar">Personalen tipsar</a>
+        <a href="/index.html#kontaktform">Vill du veta mer?</a>
+        <a href="/index.html#footer">Kontakt</a>
       </nav>
 
       <nav class="desktop-nav">
-        <a href="#evenemang">Evenemang</a>
-        <a href="#nytt-hos-oss">Nytt hos oss</a>
-        <a href="#personalen-tipsar">Personalen tipsar</a>
-        <a href="#kontaktform">Vill du veta mer?</a>
-        <a href="#footer">Sociala medier</a>
+        <a href="/index.html#evenemang">Evenemang</a>
+        <a href="/index.html#nytt-hos-oss">Nytt hos oss</a>
+        <a href="/index.html#personalen-tipsar">Personalen tipsar</a>
+        <a href="/index.html#kontaktform">Vill du veta mer?</a>
+        <a href="/index.html#footer">Kontakt</a>
       </nav>
     </header>
 
@@ -105,7 +108,7 @@
             <h2 class="aligncenter">Boka din plats</h2>
             <form>
               <label for="namn"><span class="red-text">*</span>Namn</label>
-              <input type="text" id="namn" name="namn" placeholder="Namn" />
+              <input type="text" id="namn" name="namn" placeholder="Namn" required/>
               <label for="epost"
                 ><span class="red-text">*</span>E-postadress</label
               >
@@ -114,6 +117,7 @@
                 id="epost"
                 name="epost"
                 placeholder="E-postadress"
+                required
               />
               <label for="antal"><span class="red-text">*</span>Antal</label>
               <input
@@ -124,6 +128,7 @@
                 min="1"
                 max="10"
                 value="1"
+                required
               />
 
               <br />
@@ -144,8 +149,10 @@
                 />
                 <label for="nyhetsbrev">Prenumerera på nyhetsbrev</label>
               </aside>
+              <aside class="kontaktform-button-container">
+                <button type="submit" class="button--pink aligncenter">Boka</button>
+              </aside>
             </form>
-            <button type="submit" class="button--pink aligncenter">Boka</button>
           </section>
         </article>
 
@@ -197,5 +204,6 @@
         </nav>
       </section>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
