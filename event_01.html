@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bokklubb</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="event.css">
+    <link rel="icon" type="image/png" href="/img/file.PNG" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="/img/file.PNG" alt="logo" class="logo" />
+      </a>
+
+      <section class="header-title">
+        <h1 class="poppins-regular">Pärmar & Poesi</h1>
+        <p class="poppins-light">Bokhandel</p>
+      </section>
+
+      <button class="hamburger">
+        <aside class="bar"></aside>
+      </button>
+
+      <nav class="mobile-nav">
+        <a href="/index.html#evenemang">Evenemang</a>
+        <a href="/index.html#nytt-hos-oss">Nytt hos oss</a>
+        <a href="/index.html#personalen-tipsar">Personalen tipsar</a>
+        <a href="/index.html#kontaktform">Vill du veta mer?</a>
+        <a href="/index.html#footer">Kontakt</a>
+      </nav>
+
+      <nav class="desktop-nav">
+        <a href="/index.html#evenemang">Evenemang</a>
+        <a href="/index.html#nytt-hos-oss">Nytt hos oss</a>
+        <a href="/index.html#personalen-tipsar">Personalen tipsar</a>
+        <a href="/index.html#kontaktform">Vill du veta mer?</a>
+        <a href="/index.html#footer">Kontakt</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="home__main__section evenemang">
+        <h2>Evenemang: Bokcirkel</h2>
+
+        <article class="article evenemang__event">
+          <figure class="event-picture">
+            <img
+              src="/img/stacken_1280x960.jpg"
+              width="1280"
+              height="960"
+              alt="Boken 'Stacken' och några kottar på ett bord"
+            />
+          </figure>
+          <section class="event-info event-page-text">
+            <h3>
+              Vi läser "Stacken" <span class="no-wrap">av Annika Norlin.</span>
+            </h3>
+            <p>
+              Ny bok i bokcirkeln! Till första samtalet läser vi till och med
+              sidan 61. Lämna ett meddelande om vi ska reservera ett exemplar av
+              boken.
+            </p>
+            <blockquote>
+              Vad är det som händer nere vid vattnet? Emelie har flytt staden
+              för skogen och ser plötsligt en grupp människor. Sju är de, alla
+              med sin egen särskilda förmåga. Någon var här först och är liksom
+              grunden för allt. En annan är så handlingskraftig att hon suttit i
+              fängelse för dråp. En tredje, nykomlingen, är bara så obegripligt
+              vacker. Och så är det Sara, först och främst är det nog hon,
+              alfahonan.
+            </blockquote>
+            <blockquote>
+              Stacken skildrar en grupp människor utanför samhället. Hur hamnade
+              de där, som delar av en grupp där ingen måste klara allt och där
+              alla bidrar med något? Måste man trivas med den roll man
+              tilldelats av andra? Och vad händer när en främling - en Utanförs!
+              - dyker upp och skakar om allt?
+            </blockquote>
+
+            <div class="lr-container">
+              <time datetime="2024-11-12 14:00"
+                >Kl. 14:00 - 16:30 |
+                <span class="no-wrap">12 november</span></time
+              >
+              <p class="event-page-text__price"><span>Pris: Gratis!</p>
+            </div>
+            <address class="address">Sättunagatan 3, Linköping</address>
+          </section>
+          <section class="kontaktform" id="kontaktform">
+            <h2 class="aligncenter">Boka din plats</h2>
+            <form>
+              <label for="namn"><span class="red-text">*</span>Namn</label>
+              <input type="text" id="namn" name="namn" placeholder="Namn" required/>
+              <label for="epost"
+                ><span class="red-text">*</span>E-postadress</label
+              >
+              <input
+                type="email"
+                id="epost"
+                name="epost"
+                placeholder="E-postadress"
+                required
+              />
+              <label for="antal"><span class="red-text">*</span>Antal</label>
+              <input
+                class="number-input"
+                type="number"
+                id="antal"
+                name="antal"
+                min="1"
+                max="10"
+                value="1"
+                required
+              />
+
+              <br />
+
+              <label for="meddelande">Meddelande (valfritt)</label>
+              <textarea
+                id="meddelande"
+                name="meddelande"
+                rows="5"
+                placeholder="Meddelande"
+              ></textarea>
+              <aside>
+                <input
+                  type="checkbox"
+                  id="nyhetsbrev"
+                  value="nyhetsbrev"
+                  checked
+                />
+                <label for="nyhetsbrev">Prenumerera på nyhetsbrev</label>
+              </aside>
+              <aside class="kontaktform-button-container">
+                <button type="submit" class="button--pink aligncenter">Boka</button>
+              </aside>
+            </form>
+          </section>
+        </article>
+
+        <button class="button--blue">Visa alla evenemang</button>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <section class="contact">
+        <h2>Kontakt</h2>
+        <address>
+          <p>Telefon: <a href="tel:+46700000000">070-000-00-00</a></p>
+          <p>
+            Adress:
+            <a
+              href="https://maps.google.com?q=Sättunagatan 3, Linköping"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Sättunagatan 3, Linköping</a
+            >
+          </p>
+        </address>
+      </section>
+      <section class="social">
+        <h2>Här finns vi</h2>
+        <nav class="icons">
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

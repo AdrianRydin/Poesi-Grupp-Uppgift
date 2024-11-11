@@ -14,6 +14,10 @@ figure img {
   display: block;
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
 /* VARIABLER */
 :root {
   --COLOR-RED: #e94f37;
@@ -27,6 +31,7 @@ figure img {
 html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  margin-top: 20vh;
 }
 
 main h2,
@@ -47,6 +52,8 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: fixed;
+  top:0;
 }
 
 .logo-title{
@@ -160,9 +167,10 @@ header {
   gap: 1rem;
   width: fit-content;
   max-width: 50%;
-  font-size: 20px;
+  font-size: clamp(0.3rem, 1.5vw, 1.3rem);
   height: 100%;
   align-items: center;
+  flex-shrink: 1;
 }
 .desktop-nav a {
   color: white;
@@ -189,6 +197,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .home__main__section {
@@ -287,6 +296,24 @@ hr {
 
 
 }
+.kontaktform-button-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.kontaktform button{
+  cursor: pointer;
+}
+.kontaktform-button-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.kontaktform button{
+  cursor: pointer;
+}
 
 .kontaktform aside {
   text-align: center;
@@ -307,7 +334,7 @@ label {
   color: var(--COLOR-DARK);
 }
 
-span {
+.red-text {
   color: var(--COLOR-RED);
 }
 
@@ -319,6 +346,11 @@ input {
   font: inherit;
   padding-left: 10px;
   margin-bottom: 1.5rem;
+}
+
+.number-input {
+  margin-left: 0.6rem;
+  max-width: 3.5rem;
 }
 
 textarea {
@@ -355,6 +387,7 @@ textarea {
 
 .arrow-link span{
   font-size: 2rem;
+  color: var(--COLOR-RED);
 }
 
 .button--blue {
@@ -368,8 +401,21 @@ textarea {
   margin: 1rem;
 }
 
+.button--pink {
+  font: inherit;
+  min-width: 8rem;
+  background-color: var(--COLOR-PINK);
+  color: var(--COLOR-RED);
+  border: none;
+  border-radius: 1rem;
+  padding: 0.8em;
+  margin: 1rem;
+}
+
+/* MEDIA QUERIES */
+
 @media (prefers-reduced-motion) {
-  html{
+  html {
     scroll-behavior: auto;
   }
 }
@@ -378,7 +424,7 @@ textarea {
   .hamburger {
     display: none;
   }
-  .desktop-nav{
+  .desktop-nav {
     display: flex;
   }
   .opening-times{
@@ -393,7 +439,13 @@ textarea {
   .evenemang{
     display: none;
   }
-  
+    header{
+    height: 12vh;
+  }
+  html{
+    margin-top: 12vh;
+  }
+
   .kontaktform{
     width: 80%;
     max-width: 80%;
