@@ -62,7 +62,7 @@ html, body {
     
 }
 i {
-    font-size: 24px; 
+    font-size: 28px; 
     color:#FFCDE5; 
     margin: 10px; 
 }
@@ -71,8 +71,8 @@ a {
 }
 a:hover i {
     color: #007bff;
-    transform: scale(1.5);
-    transition-delay: 0.2s;
+    transform: rotate(360deg);
+    transition: 1s ease;
 }
 @media (max-width: 1200px) { 
     .footer {
@@ -112,20 +112,16 @@ a:hover i {
         padding: 8px;
       
     }
-
     .contact,
     .social {
         width: 100%;
         padding: 0;
     }
-
     .icons {
         justify-content: center; 
     }
-
     .contact h2 {
-        font-size: 1em;
-        
+        font-size: 1em;   
     }
     .social h2 {
         font-size: 1em;
