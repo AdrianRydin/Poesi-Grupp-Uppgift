@@ -365,7 +365,7 @@ textarea {
   margin: 1rem;
 }
 
-@media (prefers-reduced-motion) {
+/* @media (prefers-reduced-motion) {
   html{
     scroll-behavior: auto;
   }
@@ -405,7 +405,7 @@ textarea {
   .opening-times p{
     font-size: 1.2rem;
   }
-}
+} */
 
 
 
@@ -416,63 +416,3 @@ textarea {
 
 
 
-
-
-
-/* KONTAKTFORMULÄR */
-@media screen and (min-width: 1200px) {
-  .kontaktform{
-    padding: 40px;
-  }
-  .form{
-    max-width: 60rem;
-    padding: 0 3rem;
-  }
-  .input, textarea{
-   font-size: 1.1 rem;
-   height: 3rem;
-   padding-left: 15px;
-   margin-bottom: 2rem;
-  }
-  #nyhetsbrev{
-    width: 30px;
-    height: 30px;
-  }
-}
-
-@media screen and (min-width: 992px){
-  .kontaktform{
-    padding: 2rem;
-    align-items: center;
-  }
-  .form{
-    max-width: 50rem;
-    padding: 0 3rem;
-  }
-  .input, textarea{
-    font-size: 1.2 rem;
-    height: 3rem;
-    padding-left: 15px;
-    margin-bottom: 2rem;
-   }
-   .label{
-    font-size: 1.1rem;
-   }
-   .aligncenter{
-    align-self: center;
-    margin-top: 1rem;
-   }
-}
-@media (max-width: 768px){
-  .kontaktform{
-    align-items: center;
-    padding: 0 1rem;
-  }
-  .form{
-    max-width: 100%;
-    padding: 0 1.5rem;
-  }
-  .input,textarea{
-    fo
-  }
-}
