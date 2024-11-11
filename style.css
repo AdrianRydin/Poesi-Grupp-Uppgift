@@ -14,6 +14,10 @@ figure img {
   display: block;
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
 /* VARIABLER */
 :root {
   --COLOR-RED: #e94f37;
@@ -245,7 +249,7 @@ label {
   color: var(--COLOR-DARK);
 }
 
-span {
+.red-text {
   color: var(--COLOR-RED);
 }
 
@@ -300,8 +304,22 @@ textarea {
   margin: 1rem;
 }
 
+/* EVENT MORE INFO PAGE */
+
+.event-page-text p {
+  margin-top: 1rem;
+}
+
+.event-page-text > .lr-container {
+  align-items: flex-end;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* MEDIA QUERIES */
+
 @media (prefers-reduced-motion) {
-  html{
+  html {
     scroll-behavior: auto;
   }
 }
@@ -310,7 +328,7 @@ textarea {
   .hamburger {
     display: none;
   }
-  .desktop-nav{
+  .desktop-nav {
     display: flex;
   }
 }
