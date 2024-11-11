@@ -15,9 +15,7 @@ html, body {
     padding: 20px;
     z-index: 1000;
 }
-
-
-    .contact h2, .social h2 {
+ .contact h2, .social h2 {
     font-size: 1.2em;
     margin-bottom: 10px;
 }   
@@ -39,6 +37,17 @@ html, body {
     display: flex;
     gap: 10px;
 }
+.icons ul {
+    list-style: none; 
+    padding: 0;      
+    margin: 0;     
+    display: flex;    
+    gap: 10px;
+}
+
+.icons li {
+    list-style: none; 
+}
 .icon {
     display: inline-block;
     width: 40px;
@@ -50,23 +59,21 @@ html, body {
     color: #3a3131; 
     font-weight: bold;
     transition: transform 0.5s ease-in-out;
+    
 }
 i {
     font-size: 24px; 
     color:#FFCDE5; 
     margin: 10px; 
 }
-
 a {
     text-decoration: none;
 }
-
 a:hover i {
     color: #007bff;
     transform: scale(1.5);
     transition-delay: 0.2s;
 }
-
 @media (max-width: 1200px) { 
     .footer {
         padding: 15px;
