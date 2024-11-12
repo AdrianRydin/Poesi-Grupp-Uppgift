@@ -211,6 +211,9 @@ header {
 
 .event-info {
   margin: 1rem;
+  width: 100%;
+  height: auto;
+  
 }
 
 .evenemang__event {
@@ -265,19 +268,34 @@ hr {
 .event-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
+  justify-content: space-between;
   width: 30%;
   height: 60vh;
   background-color: white;
 }
 
-.evenemang_button {
+.event-image{
+  width: 100%;
+  height: auto;
+}
+
+
+.event-image{
+  width: 100%;
+  height: auto;
+}
+
+
+.evenemang_button{
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   border: none;
   background-color: var(--COLOR-PINK);
 }
+
+
 
 /* KONTAKTFORMULÄR */
 
@@ -378,6 +396,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 2rem;
 }
 
 .arrow-link span {
