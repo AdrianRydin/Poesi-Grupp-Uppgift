@@ -32,6 +32,7 @@ html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   margin-top: 20vh;
+  scroll-padding-top: 20vh;
 }
 
 main h2,
@@ -53,16 +54,15 @@ header {
   justify-content: space-evenly;
   align-items: center;
   position: fixed;
-  top:0;
+  top: 0;
 }
 
-.logo-title{
+.logo-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 20%;
 }
-
 
 .opening-times {
   background-color: #d9d9d9;
@@ -88,9 +88,9 @@ header {
   flex-wrap: wrap;
 }
 
-.vertical-line{
+.vertical-line {
   width: 2px;
-  height:20%;
+  height: 20%;
   background-color: white;
 }
 
@@ -197,7 +197,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .home__main__section {
@@ -225,8 +224,6 @@ header {
   width: 100%;
   align-self: center;
 }
-
-
 
 .new_books__image {
   width: 40%;
@@ -257,7 +254,7 @@ hr {
   width: 80%;
 }
 
-.evenemang-desktop{
+.evenemang-desktop {
   display: none;
   align-items: center;
   justify-content: space-evenly;
@@ -265,9 +262,7 @@ hr {
   margin-bottom: 1rem;
 }
 
-
-
-.event-container{
+.event-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,7 +271,7 @@ hr {
   background-color: white;
 }
 
-.evenemang_button{
+.evenemang_button {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -305,13 +300,13 @@ hr {
 .kontaktform button{
   cursor: pointer;
 }
-.kontaktform-button-container{
+.kontaktform-button-container {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-.kontaktform button{
+.kontaktform button {
   cursor: pointer;
 }
 
@@ -385,7 +380,7 @@ textarea {
   justify-content: center;
 }
 
-.arrow-link span{
+.arrow-link span {
   font-size: 2rem;
   color: var(--COLOR-RED);
 }
@@ -427,24 +422,27 @@ textarea {
   .desktop-nav {
     display: flex;
   }
-  .opening-times{
+  .opening-times {
     height: 2rem;
   }
-  .home__main__section{
+  .home__main__section {
     max-width: 80%;
   }
-  .evenemang-desktop{
+  .evenemang-desktop {
     display: flex;
   }
-  .evenemang{
+  .evenemang {
     display: none;
   }
-    header{
+
+  header {
     height: 12vh;
   }
-  html{
+  html {
     margin-top: 12vh;
+    scroll-padding-top: 12vh;
   }
+
 
   .kontaktform{
     width: 80%;
@@ -453,29 +451,21 @@ textarea {
 form{
     max-width: 80%;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
-
-  .header-title{
-    font-size:large
+  .header-title {
+    font-size: large;
   }
   .logo {
     width: 6rem;
     height: 6rem;
   }
-  .opening-times p{
+  .opening-times p {
     font-size: 1.2rem;
   }
-  
-} 
 
-
-
-
-
-
-
-
+}
 
 
