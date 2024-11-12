@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="carousel.css"/>
     <link rel="icon" type="image/png" href="/img/file.PNG" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -72,7 +73,7 @@
     <main class="main">
       <section class="home__main__section evenemang" id="evenemang">
         <h2>Evenemang</h2>
-
+       
         <article class="article evenemang__event">
           <figure class="event-picture">
             <img
@@ -114,6 +115,7 @@
             </div>
           </section>
         </article>
+    </section>
 
         <button class="button--blue">Visa alla evenemang</button>
         <hr />
@@ -212,36 +214,50 @@
 
       </section>
 
-      <section class="home__main__section new_books" id="nytt-hos-oss">
+      <section class="home__main__section carousel-container new_books" id="nytt-hos-oss">
         <h2>Nytt hos oss</h2>
-        <div class="lr-container">
-          <figure class="new_books__image">
-            <img
-              src="https://image.bokus.com/images/9789185725731_383x_kompression"
-              alt="Omslag för Emil Boss 'Kompression'"
-            />
-          </figure>
-          <figure class="new_books__image">
+       
+      
+
+          <div class="carousel-track">
+        <!-- <div class="lr-container">  -->
+          <figure class="slides">
+            <!-- <figure class="new_books__image"> -->
+              <img
+                src="https://image.bokus.com/images/9789185725731_383x_kompression"
+                alt="Omslag för Emil Boss 'Kompression'"
+              />
+            <!-- </figure>  -->
+            </figure>
+          <figure class="slides">
+          <!-- <figure class="new_books__image"> -->
             <img
               src="https://image.bokus.com/images/9789189759107_383x_om-det-fanns-en-plats-som-var-min"
               alt="Omslag för Helena Österlunds 'Om det fanns en plas som var min'"
             />
+            <!-- </figure> -->
           </figure>
-          <figure class="new_books__image">
+          <figure class="slides">
+          <!-- <figure class="new_books__image"> -->
             <img
               src="https://image.bokus.com/images/9789146242420_383x_vaxla-ringar-med-morkret_haftad"
               alt="Omslag för Bruno K. Öjers 'Växla ringar med mörkret'"
             />
+          <!-- </figure> -->
           </figure>
-          <figure class="new_books__image">
+          <figure class="slides">
+          <!-- <figure class="new_books__image"> -->
             <img
-            src="https://image.bokus.com/images/9789100800406_383x_det-roda-ar-det-granslosa_haftad
-            alt="Omslag för Judith Kiros 'Det röda är det gränslösa'" />
+            src="https://image.bokus.com/images/9789100800406_383x_det-roda-ar-det-granslosa_haftad"
+            alt="Omslag för Judith Kiros.'Det röda är det gränslösa'" 
+            />
           </figure>
+          <!-- </figure>
+        </div> -->
         </div>
         <button class="button--blue">Fler nyheter</button>
         <hr />
-      </section>
+  </section>
 
       <section
         class="home__main__section personalen-tipsar"
