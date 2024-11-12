@@ -18,6 +18,13 @@ figure img {
   white-space: nowrap;
 }
 
+.evenemang-desktop-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
 /* VARIABLER */
 :root {
   --COLOR-RED: #e94f37;
@@ -55,6 +62,7 @@ header {
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 .logo-title {
@@ -213,7 +221,6 @@ header {
   margin: 1rem;
   width: 100%;
   height: auto;
-  
 }
 
 .evenemang__event {
@@ -268,34 +275,30 @@ hr {
 .event-container {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
   width: 30%;
   height: 60vh;
   background-color: white;
 }
 
-.event-image{
+.event-image {
   width: 100%;
   height: auto;
 }
 
-
-.event-image{
+.event-image {
   width: 100%;
   height: auto;
 }
 
-
-.evenemang_button{
+.evenemang_button {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   border: none;
   background-color: var(--COLOR-PINK);
 }
-
-
 
 /* KONTAKTFORMULÄR */
 
@@ -306,16 +309,14 @@ hr {
   justify-content: center;
   align-items: flex-start;
   max-width: 40rem;
-
-
 }
-.kontaktform-button-container{
+.kontaktform-button-container {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-.kontaktform button{
+.kontaktform button {
   cursor: pointer;
 }
 .kontaktform-button-container {
@@ -334,7 +335,7 @@ hr {
   align-content: center;
   justify-content: center;
   gap: 0.7rem;
-} 
+}
 
 form {
   width: 100%;
@@ -426,6 +427,35 @@ textarea {
   margin: 1rem;
 }
 
+.arrow-link:hover,
+.arrow-link:focus {
+  filter: brightness(105%);
+  cursor: pointer;
+}
+
+.arrow-link:active {
+  background-color: hsl(231, 100%, 90%);
+}
+
+button:hover,
+button:focus {
+  filter: brightness(120%);
+  box-shadow: var(--SHADOW);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--COLOR-RED);
+}
+
+.button--pink:hover {
+  filter: brightness(105%);
+}
+
+.button--pink:active {
+  background-color: hsl(231, 100%, 90%);
+}
+
 /* MEDIA QUERIES */
 
 @media (prefers-reduced-motion) {
@@ -435,6 +465,15 @@ textarea {
 }
 
 @media screen and (min-width: 992px) {
+  html {
+    margin-top: 12vh;
+    scroll-padding-top: 12vh;
+  }
+
+  header {
+    height: 12vh;
+  }
+
   .hamburger {
     display: none;
   }
@@ -447,6 +486,11 @@ textarea {
   .home__main__section {
     max-width: 80%;
   }
+
+  .evenemang-desktop-container {
+    display: flex;
+  }
+
   .evenemang-desktop {
     display: flex;
   }
@@ -454,23 +498,13 @@ textarea {
     display: none;
   }
 
-  header {
-    height: 12vh;
-  }
-  html {
-    margin-top: 12vh;
-    scroll-padding-top: 12vh;
-  }
-
-
-  .kontaktform{
+  .kontaktform {
     width: 80%;
     max-width: 80%;
   }
-form{
+  form {
     max-width: 80%;
   }
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -484,7 +518,4 @@ form{
   .opening-times p {
     font-size: 1.2rem;
   }
-
 }
-
-
