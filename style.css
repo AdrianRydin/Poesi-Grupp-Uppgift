@@ -31,6 +31,8 @@ figure img {
 html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  margin-top: 20vh;
+  scroll-padding-top: 20vh;
 }
 
 main h2,
@@ -51,15 +53,16 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: fixed;
+  top: 0;
 }
 
-.logo-title{
+.logo-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 20%;
 }
-
 
 .opening-times {
   background-color: #d9d9d9;
@@ -85,9 +88,9 @@ header {
   flex-wrap: wrap;
 }
 
-.vertical-line{
+.vertical-line {
   width: 2px;
-  height:20%;
+  height: 20%;
   background-color: white;
 }
 
@@ -164,9 +167,10 @@ header {
   gap: 1rem;
   width: fit-content;
   max-width: 50%;
-  font-size: 20px;
+  font-size: clamp(0.3rem, 1.5vw, 1.3rem);
   height: 100%;
   align-items: center;
+  flex-shrink: 1;
 }
 .desktop-nav a {
   color: white;
@@ -224,8 +228,6 @@ header {
   align-self: center;
 }
 
-
-
 .new_books__image {
   width: 40%;
   margin: 0.3rem;
@@ -255,7 +257,7 @@ hr {
   width: 80%;
 }
 
-.evenemang-desktop{
+.evenemang-desktop {
   display: none;
   align-items: center;
   justify-content: space-evenly;
@@ -263,9 +265,7 @@ hr {
   margin-bottom: 1rem;
 }
 
-
-
-.event-container{
+.event-container {
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -305,6 +305,27 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  max-width: 40rem;
+
+
+}
+.kontaktform-button-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.kontaktform button{
+  cursor: pointer;
+}
+.kontaktform-button-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.kontaktform button {
+  cursor: pointer;
 }
 
 .kontaktform aside {
@@ -313,7 +334,7 @@ hr {
   align-content: center;
   justify-content: center;
   gap: 0.7rem;
-}
+} 
 
 form {
   width: 100%;
@@ -378,7 +399,7 @@ textarea {
   margin-right: 2rem;
 }
 
-.arrow-link span{
+.arrow-link span {
   font-size: 2rem;
   color: var(--COLOR-RED);
 }
@@ -405,44 +426,6 @@ textarea {
   margin: 1rem;
 }
 
-/* EVENT MORE INFO PAGE */
-
-.evenemang__event {
-  margin-bottom: 1rem;
-}
-
-.event-page-text {
-  padding: 1rem;
-}
-
-.event-page-text h3 {
-  font-size: clamp(1rem, 4vw, 1.3rem);
-}
-
-.event-page-text p {
-  margin-top: 1rem;
-}
-
-.event-page-text blockquote {
-  margin: 1rem 0;
-  font-style: italic;
-}
-
-.event-page-text > .lr-container {
-  flex-wrap: wrap-reverse;
-  align-items: flex-start;
-  font-weight: 500;
-  font-size: 1.1rem;
-  gap: 0.6rem;
-}
-
-.address {
-  font-style: normal;
-  margin-top: 0.6rem;
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-
 /* MEDIA QUERIES */
 
 @media (prefers-reduced-motion) {
@@ -458,99 +441,50 @@ textarea {
   .desktop-nav {
     display: flex;
   }
-  .opening-times{
+  .opening-times {
     height: 2rem;
   }
-  .home__main__section{
+  .home__main__section {
     max-width: 80%;
   }
-  .evenemang-desktop{
+  .evenemang-desktop {
     display: flex;
   }
-  .evenemang{
+  .evenemang {
     display: none;
+  }
+
+  header {
+    height: 12vh;
+  }
+  html {
+    margin-top: 12vh;
+    scroll-padding-top: 12vh;
+  }
+
+
+  .kontaktform{
+    width: 80%;
+    max-width: 80%;
+  }
+form{
+    max-width: 80%;
   }
 
 }
 
 @media screen and (min-width: 1200px) {
-
-  .header-title{
-    font-size:large
+  .header-title {
+    font-size: large;
   }
   .logo {
     width: 6rem;
     height: 6rem;
   }
-  .opening-times p{
+  .opening-times p {
     font-size: 1.2rem;
   }
+
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* KONTAKTFORMULÄR
-@media screen and (min-width: 1200px) {
-  .kontaktform{
-    padding: 40px;
-  }
-  .form{
-    max-width: 60rem;
-    padding: 0 3rem;
-  }
-  .input, textarea{
-   font-size: 1.1 rem;
-   height: 3rem;
-   padding-left: 15px;
-   margin-bottom: 2rem;
-  }
-  #nyhetsbrev{
-    width: 30px;
-    height: 30px;
-  }
-}
-
-@media screen and (min-width: 992px){
-  .kontaktform{
-    padding: 2rem;
-    align-items: center;
-  }
-  .form{
-    max-width: 50rem;
-    padding: 0 3rem;
-  }
-  .input, textarea{
-    font-size: 1.2 rem;
-    height: 3rem;
-    padding-left: 15px;
-    margin-bottom: 2rem;
-   }
-   .label{
-    font-size: 1.1rem;
-   }
-   .aligncenter{
-    align-self: center;
-    margin-top: 1rem;
-   }
-}
-@media screen (max-width: 768px){
-  .kontaktform{
-    align-items: center;
-    padding: 0 1rem;
-  }
-  .form{
-    max-width: 100%;
-    padding: 0 1.5rem;
-  }
-  
-} */

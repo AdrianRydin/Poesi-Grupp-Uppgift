@@ -26,8 +26,9 @@
   </head>
   <body">
     <header>
-
+      <a href="index.html">
         <img src="/img/file.PNG" alt="logo" class="logo" />
+      </a>
         
         <section class="header-title">
           <h1 class="poppins-regular">Pärmar & Poesi</h1>
@@ -82,7 +83,7 @@
             />
           </figure>
           <section class="event-info">
-            <h3>Bokklubb</h3>
+            <h3>Bokcirkel</h3>
             <p>Vi läser "Stacken" av Annika Norlin.</p>
             <div class="lr-container">
               <time datetime="2024-11-12 14:00"
@@ -135,7 +136,7 @@
             </section>
   
             <section class="event-info">
-              <h3>Bokklubb</h3>
+              <h3>Bokcirkel</h3>
               <p>Vi läser "Stacken" av Annika Norlin.</p>
               <div class="lr-container">
                 <time datetime="2024-11-12 14:00"
@@ -196,7 +197,7 @@
             </a>
   
             <section class="event-info">
-              <h3>Bokklubb</h3>
+              <h3>Bokcirkel</h3>
               <p>Vi läser "Stacken" av Annika Norlin.</p>
               <div class="lr-container">
                 <time datetime="2024-11-12 14:00"
@@ -286,17 +287,18 @@
         <hr />
       </section>
 
-      <section class="kontaktform" id="kontaktform">
+      <section class="kontaktform kontakt" id="kontaktform">
         <h2 class="aligncenter">Intresserad av att veta mer?</h2>
         <form>
           <label for="namn"><span class="red-text">*</span>Namn</label>
-          <input type="text" id="namn" name="namn" placeholder="Namn" />
+          <input type="text" id="namn" name="namn" placeholder="Namn" required />
           <label for="epost"><span class="red-text">*</span>E-postadress</label>
           <input
             type="email"
             id="epost"
             name="epost"
             placeholder="E-postadress"
+            required
           />
           <label for="meddelande">Meddelande</label>
           <textarea
@@ -304,13 +306,17 @@
             name="meddelande"
             rows="5"
             placeholder="Meddelande"
+            
           ></textarea>
           <aside>
             <input type="checkbox" id="nyhetsbrev" value="nyhetsbrev" checked />
             <label for="nyhetsbrev">Prenumerera på nyhetsbrev</label>
           </aside>
+          <aside class="kontaktform-button-container">
+
+            <button type="submit" class="button--blue aligncenter">Skicka</button>
+          </aside>
         </form>
-        <button type="submit" class="button--blue aligncenter">Skicka</button>
       </section>
     </main>
 
@@ -349,6 +355,12 @@
           </ul>
         </nav>
       </section>
+      <section class="back-to-top">
+        <a href="#top" aria-label="Till toppen">
+            <span class="toppen">Till toppen</span>
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </section>    
     </footer>
     <script src="script.js"></script>
   </body>
