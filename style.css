@@ -234,11 +234,6 @@ header {
   box-shadow: var(--SHADOW);
 }
 
-.personalen-tipsar__image {
-  width: 40%;
-  margin: 1rem;
-  box-shadow: var(--SHADOW);
-}
 
 .lr-container {
   display: flex;
@@ -295,6 +290,32 @@ hr {
   background-color: var(--COLOR-PINK);
 }
 
+
+/* PERSONALEN TIPSAR*/
+
+.personalen-tipsar-desktop{
+  display: none;
+  width: 90%;
+  background-color: white;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.personalen-tipsar__image {
+  width: 40%;
+  margin: 1rem;
+}
+
+.personalen-tipsar__image-desktop-container{
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
 
 
 /* KONTAKTFORMULÄR */
@@ -461,15 +482,27 @@ textarea {
     margin-top: 12vh;
     scroll-padding-top: 12vh;
   }
-
-
   .kontaktform{
-    width: 80%;
+    width: 90%;
+    max-width: 90%;
+  }
+  form{
     max-width: 80%;
   }
-form{
-    max-width: 80%;
+
+  .personalen-tipsar-desktop{
+    display: flex;
   }
+  .personalen-tipsar-mobile{
+    display: none;
+  }
+  .personalen-tipsar__image{
+    width:fit-content;
+  }
+  .button--blue{
+    width: 20%;
+  }
+
 
 }
 
