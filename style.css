@@ -18,6 +18,13 @@ figure img {
   white-space: nowrap;
 }
 
+.evenemang-desktop-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
 /* VARIABLER */
 :root {
   --COLOR-RED: #e94f37;
@@ -32,6 +39,7 @@ html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   margin-top: 20vh;
+  scroll-padding-top: 20vh;
 }
 
 main h2,
@@ -53,17 +61,16 @@ header {
   justify-content: space-evenly;
   align-items: center;
   position: fixed;
-  top:0;
-  z-index: 10;
+  top: 0;
+  z-index: 1;
 }
 
-.logo-title{
+.logo-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 20%;
 }
-
 
 .opening-times {
   background-color: #d9d9d9;
@@ -89,9 +96,9 @@ header {
   flex-wrap: wrap;
 }
 
-.vertical-line{
+.vertical-line {
   width: 2px;
-  height:20%;
+  height: 20%;
   background-color: white;
 }
 
@@ -121,9 +128,11 @@ header {
   margin: 6px 0px;
   transition: 0.4s;
 }
+
 .hamburger.is-active:before {
   transform: rotate(-45deg) translate(-9px, 7px);
 }
+
 .hamburger.is-active:after {
   transform: rotate(45deg) translate(-8px, -7px);
 }
@@ -148,6 +157,7 @@ header {
 .mobile-nav.is-active {
   left: 0;
 }
+
 .mobile-nav a {
   display: block;
   width: 100%;
@@ -173,14 +183,17 @@ header {
   align-items: center;
   flex-shrink: 1;
 }
+
 .desktop-nav a {
   color: white;
   text-decoration: none;
 }
+
 .desktop-nav a:hover {
   color: var(--COLOR-PINK);
   transition: 0.4s;
 }
+
 .desktop-nav a:hover::after {
   content: "";
   display: block;
@@ -198,7 +211,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .home__main__section {
@@ -213,6 +225,8 @@ header {
 
 .event-info {
   margin: 1rem;
+  width: 100%;
+  height: auto;
 }
 
 .evenemang__event {
@@ -233,12 +247,6 @@ header {
   box-shadow: var(--SHADOW);
 }
 
-.personalen-tipsar__image {
-  width: 40%;
-  margin: 1rem;
-  box-shadow: var(--SHADOW);
-}
-
 .lr-container {
   display: flex;
   justify-content: space-between;
@@ -256,7 +264,7 @@ hr {
   width: 80%;
 }
 
-.evenemang-desktop{
+.evenemang-desktop {
   display: none;
   align-items: center;
   justify-content: space-evenly;
@@ -264,21 +272,57 @@ hr {
   margin-bottom: 1rem;
 }
 
-.event-container{
+
+
+.event-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 30%;
   height: 60vh;
   background-color: white;
 }
 
-.evenemang_button{
+.event-image {
+  width: 100%;
+  height: auto;
+}
+
+.event-image {
+  width: 100%;
+  height: auto;
+}
+
+.evenemang_button {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   border: none;
   background-color: var(--COLOR-PINK);
+}
+
+/* PERSONALEN TIPSAR*/
+
+.personalen-tipsar-desktop {
+  display: none;
+  width: 90%;
+  background-color: white;
+  flex-direction: column;
+  align-self: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.personalen-tipsar__image {
+  width: 40%;
+  margin: 1rem;
+}
+
+.personalen-tipsar__image-desktop-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* KONTAKTFORMULÄR */
@@ -290,25 +334,27 @@ hr {
   justify-content: center;
   align-items: flex-start;
   max-width: 40rem;
-
-
 }
-.kontaktform-button-container{
+
+.kontaktform-button-container {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-.kontaktform button{
+
+.kontaktform button {
   cursor: pointer;
 }
-.kontaktform-button-container{
+
+.kontaktform-button-container {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-.kontaktform button{
+
+.kontaktform button {
   cursor: pointer;
 }
 
@@ -318,7 +364,7 @@ hr {
   align-content: center;
   justify-content: center;
   gap: 0.7rem;
-} 
+}
 
 form {
   width: 100%;
@@ -366,6 +412,7 @@ textarea {
   height: 25px;
   cursor: pointer;
 }
+
 .aligncenter {
   align-self: center;
 }
@@ -376,26 +423,31 @@ textarea {
   width: 3rem;
   height: 3rem;
   background-color: var(--COLOR-PINK);
-  border-radius: 50%;
+  border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.arrow-link span{
+.evenemang__event .arrow-link,
+.evenemang-desktop .arrow-link {
+  margin-right: 2rem;
+}
+
+.arrow-link span {
   font-size: 2rem;
   color: var(--COLOR-RED);
 }
 
 .button--blue {
   font: inherit;
-  min-width: 8rem;
+  min-width: 10rem;
   background-color: var(--COLOR-BLUE);
   color: white;
   border: none;
   border-radius: 1rem;
-  padding: 0.8em;
-  margin: 1rem;
+  padding: 0.8rem;
+  margin: 1rem auto;
 }
 
 .button--pink {
@@ -409,6 +461,35 @@ textarea {
   margin: 1rem;
 }
 
+.arrow-link:hover,
+.arrow-link:focus {
+  filter: brightness(105%);
+  cursor: pointer;
+}
+
+.arrow-link:active {
+  background-color: hsl(231, 100%, 90%);
+}
+
+button:hover,
+button:focus {
+  filter: brightness(120%);
+  box-shadow: var(--SHADOW);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--COLOR-RED);
+}
+
+.button--pink:hover {
+  filter: brightness(105%);
+}
+
+.button--pink:active {
+  background-color: hsl(231, 100%, 90%);
+}
+
 /* MEDIA QUERIES */
 
 @media (prefers-reduced-motion) {
@@ -418,61 +499,85 @@ textarea {
 }
 
 @media screen and (min-width: 992px) {
+  html {
+    margin-top: 12vh;
+    scroll-padding-top: 12vh;
+  }
+
+  header {
+    height: 12vh;
+  }
+
   .hamburger {
     display: none;
   }
+
   .desktop-nav {
     display: flex;
   }
-  .opening-times{
+
+  .opening-times {
     height: 2rem;
   }
-  .home__main__section{
-    max-width: 80%;
-  }
-  .evenemang-desktop{
-    display: flex;
-  }
-  .evenemang{
-    display: none;
-  }
-    header{
-    height: 12vh;
-  }
-  html{
-    margin-top: 12vh;
+
+  .home__main__section {
+    max-width: 90%;
   }
 
-  .kontaktform{
-    width: 80%;
-    max-width: 80%;
+  .evenemang-desktop-container {
+    display: flex;
   }
-form{
-    max-width: 80%;
+
+  .evenemang-desktop {
+    display: flex;
+  }
+
+  .evenemang {
+    display: none;
+  }
+
+  header {
+    height: 12vh;
+  }
+
+  html {
+    margin-top: 12vh;
+    scroll-padding-top: 12vh;
+  }
+
+  .kontaktform {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  form {
+    max-width: 90%;
+  }
+
+  .personalen-tipsar-desktop {
+    display: flex;
+  }
+
+  .personalen-tipsar-mobile {
+    display: none;
+  }
+
+  .personalen-tipsar__image {
+    width: fit-content;
   }
 }
 
 @media screen and (min-width: 1200px) {
-
-  .header-title{
-    font-size:large
+  .header-title {
+    font-size: large;
   }
+
   .logo {
     width: 6rem;
     height: 6rem;
   }
-  .opening-times p{
+
+  .opening-times p {
     font-size: 1.2rem;
   }
-  
-} 
-
-
-
-
-
-
-
-
-
-
+}
