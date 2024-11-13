@@ -438,11 +438,12 @@ textarea {
 
 .button--blue {
   font: inherit;
+  text-align: center;
   min-width: 10rem;
   background-color: var(--COLOR-BLUE);
   color: white;
   border: none;
-  border-radius: 1rem;
+  border-radius: 9999px;
   padding: 0.8rem;
   margin: 1rem auto;
 }
@@ -468,14 +469,14 @@ textarea {
   background-color: hsl(231, 100%, 90%);
 }
 
-button:hover,
-button:focus {
+.button--blue:hover,
+.button--blue:focus {
   filter: brightness(120%);
   box-shadow: var(--SHADOW);
   cursor: pointer;
 }
 
-button:active {
+.button--blue:active {
   background-color: var(--COLOR-RED);
 }
 
