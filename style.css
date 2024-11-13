@@ -227,8 +227,6 @@ header {
   align-self: center;
 }
 
-
-
 .new_books__image {
   width: 40%;
   margin: 0.3rem;
@@ -265,8 +263,6 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
-
 
 .event-container{
   display: flex;
