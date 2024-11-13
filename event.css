@@ -14,7 +14,11 @@ html {
 }
 
 .event-h2 {
-  margin: 0 auto;
+  margin: 0 auto 1rem;
+}
+
+aside .event-h2 {
+  margin: 1rem auto 0;
 }
 
 .small_header {
@@ -29,6 +33,9 @@ html {
 .event-page-text {
   align-self: center;
   padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+  height: auto;
 }
 
 .event-page-text p {
@@ -44,7 +51,7 @@ html {
   align-items: center;
 }
 
-.event__main__section {
+.event__main__container {
   padding: 1rem;
   background-color: white;
 
@@ -53,11 +60,15 @@ html {
   align-items: center;
 }
 
-.evenemang__event {
-  margin-bottom: 1rem;
+.event__main__section__event {
+  margin-top: 1rem 0;
+  padding: 1.2rem;
+  box-shadow: var(--SHADOW);
+  display: flex;
+  flex-direction: column;
 }
 
-.evenemang__event__picture {
+.event__main__event__picture {
   width: 100%;
   align-self: center;
 }
@@ -113,24 +124,20 @@ html {
     grid-template-rows: 1fr;
   }
 
-  .event__main__section {
+  .event__main__container {
     grid-column: span 1;
     grid-row: span 1;
     min-height: 100%;
   }
 
-  .evenemang__event {
-    padding: 0 5rem;
-    line-height: 2;
-  }
-
-  .evenemang__event__picture {
+  .event__main__event__picture {
     max-width: 50rem;
   }
 
   .event-page-text {
     padding: 0;
     max-width: 50rem;
+    line-height: 2;
   }
 
   .event_container-desktop {
@@ -143,7 +150,7 @@ html {
     flex-direction: column;
     background-color: var(--COLOR-PINK);
     grid-column: span 1;
-    padding: 1rem;
+    padding: 1rem 1rem;
     gap: 1rem;
   }
 
