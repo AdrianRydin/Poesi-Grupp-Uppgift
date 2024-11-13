@@ -128,9 +128,11 @@ header {
   margin: 6px 0px;
   transition: 0.4s;
 }
+
 .hamburger.is-active:before {
   transform: rotate(-45deg) translate(-9px, 7px);
 }
+
 .hamburger.is-active:after {
   transform: rotate(45deg) translate(-8px, -7px);
 }
@@ -155,6 +157,7 @@ header {
 .mobile-nav.is-active {
   left: 0;
 }
+
 .mobile-nav a {
   display: block;
   width: 100%;
@@ -180,14 +183,17 @@ header {
   align-items: center;
   flex-shrink: 1;
 }
+
 .desktop-nav a {
   color: white;
   text-decoration: none;
 }
+
 .desktop-nav a:hover {
   color: var(--COLOR-PINK);
   transition: 0.4s;
 }
+
 .desktop-nav a:hover::after {
   content: "";
   display: block;
@@ -327,21 +333,25 @@ hr {
   align-items: flex-start;
   max-width: 40rem;
 }
+
 .kontaktform-button-container {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
+
 .kontaktform button {
   cursor: pointer;
 }
+
 .kontaktform-button-container {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
+
 .kontaktform button {
   cursor: pointer;
 }
@@ -428,13 +438,13 @@ textarea {
 
 .button--blue {
   font: inherit;
-  min-width: 8rem;
+  min-width: 10rem;
   background-color: var(--COLOR-BLUE);
   color: white;
   border: none;
   border-radius: 1rem;
-  padding: 0.8em;
-  margin: 1rem;
+  padding: 0.8rem;
+  margin: 1rem auto;
 }
 
 .button--pink {
@@ -498,12 +508,15 @@ button:active {
   .hamburger {
     display: none;
   }
+
   .desktop-nav {
     display: flex;
   }
+
   .opening-times {
     height: 2rem;
   }
+
   .home__main__section {
     max-width: 80%;
   }
@@ -515,6 +528,7 @@ button:active {
   .evenemang-desktop {
     display: flex;
   }
+
   .evenemang {
     display: none;
   }
@@ -522,10 +536,12 @@ button:active {
   header {
     height: 12vh;
   }
+
   html {
     margin-top: 12vh;
     scroll-padding-top: 12vh;
   }
+
   .kontaktform {
     width: 90%;
     max-width: 90%;
@@ -537,14 +553,13 @@ button:active {
   .personalen-tipsar-desktop {
     display: flex;
   }
+
   .personalen-tipsar-mobile {
     display: none;
   }
+
   .personalen-tipsar__image {
     width: fit-content;
-  }
-  .button--blue {
-    width: 20%;
   }
 }
 
@@ -552,10 +567,12 @@ button:active {
   .header-title {
     font-size: large;
   }
+
   .logo {
     width: 6rem;
     height: 6rem;
   }
+
   .opening-times p {
     font-size: 1.2rem;
   }
