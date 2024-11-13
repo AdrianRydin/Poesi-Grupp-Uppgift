@@ -1,0 +1,82 @@
+/* VARIABLER */
+:root {
+    --COLOR-RED: #e94f37;
+    --COLOR-PINK: #ffcde5;
+    --COLOR-DARK: #4c4345;
+    --COLOR-BLUE: #3185fc;
+    --SHADOW: -1px 1px 2px var(--COLOR-DARK);
+  }
+
+  /* TEXT */
+  html {
+    color: var(--COLOR-DARK);
+  }
+
+  .kalender-h2 {
+    text-align: center;
+  }
+
+  /* MAIN */
+  .kalender__main {
+    background-color: var(--COLOR-PINK);
+  }
+
+  .kalender_main_section {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kalender_container_mobil {
+    box-shadow: var(--SHADOW);
+    margin-bottom: 2rem;
+    max-width: 400px;
+  }
+
+  .kalender_info_mobil {
+    padding: 1rem;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+
+  .kal-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  .kalender-picture img {
+    width: 400px; 
+    height: 400px;
+    object-fit: cover;
+  }
+
+  /* MEDIA QUERIES */
+  @media screen and (min-width: 992px) {
+    .kalender_main_section {
+        max-width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .kalender_container_mobil {
+        grid-column: span 1;
+    }
+
+    .kalender-h2 {
+        grid-column: span 3;
+    }
+    
+    .evenemangknapp {
+        grid-column: 2 / 2;
+       margin: 0 auto;
+    }
+  }
