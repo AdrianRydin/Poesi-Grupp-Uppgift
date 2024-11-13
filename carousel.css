@@ -1,0 +1,112 @@
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.carousel-track {
+  display: flex;
+  width: 25rem;
+  transform: translateX(-100%);
+  animation: carousel-animation 16s ease-in-out infinite;   
+}
+
+.slides {
+  min-width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  object-fit: cover;
+}
+.slides img {
+  width: 100%; 
+  max-width: 500px; 
+  height: auto; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.new_books{
+  overflow-x: hidden;
+}
+
+
+ @keyframes carousel-animation {
+  0% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-100%);
+  }
+  50% {
+      transform: translateX(-200%);
+  }
+  75% {
+      transform: translateX(-300%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+} 
+.navigation-carousel {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15rem;
+ 
+}
+
+ @media (min-width: 480px) {
+  .carousel-track {
+    animation: carousel-animation 12s ease-in-out infinite;
+  }
+
+  .slides img {
+    width: 70%;
+  }
+
+  .navigation-carousel {
+    gap: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-track {
+    animation: carousel-animation 16s ease-in-out infinite;
+  }
+
+  .slides img {
+    width: 80%;
+  }
+
+  .navigation-carousel {
+    gap: 1rem;
+  }
+}
+@media (max-width: 1200px) {
+  .carousel-track {
+    animation: carousel-animation 20s ease-in-out infinite;
+  }
+
+  .slides img {
+    width: 100%; 
+  }
+
+  .navigation-carousel {
+    gap: 2rem;
+  }
+
+  .navigation-carousel label {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
