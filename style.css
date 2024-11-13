@@ -241,7 +241,6 @@ header {
   box-shadow: var(--SHADOW);
 }
 
-
 .lr-container {
   display: flex;
   justify-content: space-between;
@@ -295,10 +294,9 @@ hr {
   background-color: var(--COLOR-PINK);
 }
 
-
 /* PERSONALEN TIPSAR*/
 
-.personalen-tipsar-desktop{
+.personalen-tipsar-desktop {
   display: none;
   width: 90%;
   background-color: white;
@@ -306,7 +304,6 @@ hr {
   align-self: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
-
 }
 
 .personalen-tipsar__image {
@@ -314,14 +311,11 @@ hr {
   margin: 1rem;
 }
 
-.personalen-tipsar__image-desktop-container{
-
+.personalen-tipsar__image-desktop-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
 }
-
 
 /* KONTAKTFORMULÄR */
 
@@ -416,10 +410,14 @@ textarea {
   width: 3rem;
   height: 3rem;
   background-color: var(--COLOR-PINK);
-  border-radius: 50%;
+  border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.evenemang__event .arrow-link,
+.evenemang-desktop .arrow-link {
   margin-right: 2rem;
 }
 
@@ -528,7 +526,7 @@ button:active {
     margin-top: 12vh;
     scroll-padding-top: 12vh;
   }
-  .kontaktform{
+  .kontaktform {
     width: 90%;
     max-width: 90%;
   }
@@ -536,20 +534,18 @@ button:active {
     max-width: 80%;
   }
 
-  .personalen-tipsar-desktop{
+  .personalen-tipsar-desktop {
     display: flex;
   }
-  .personalen-tipsar-mobile{
+  .personalen-tipsar-mobile {
     display: none;
   }
-  .personalen-tipsar__image{
-    width:fit-content;
+  .personalen-tipsar__image {
+    width: fit-content;
   }
-  .button--blue{
+  .button--blue {
     width: 20%;
   }
-
-
 }
 
 @media screen and (min-width: 1200px) {
