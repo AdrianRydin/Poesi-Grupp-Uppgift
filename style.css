@@ -272,6 +272,8 @@ hr {
   margin-bottom: 1rem;
 }
 
+
+
 .event-container {
   display: flex;
   flex-direction: column;
@@ -410,6 +412,7 @@ textarea {
   height: 25px;
   cursor: pointer;
 }
+
 .aligncenter {
   align-self: center;
 }
@@ -519,7 +522,7 @@ textarea {
   }
 
   .home__main__section {
-    max-width: 80%;
+    max-width: 90%;
   }
 
   .evenemang-desktop-container {
@@ -547,8 +550,9 @@ textarea {
     width: 90%;
     max-width: 90%;
   }
+
   form {
-    max-width: 80%;
+    max-width: 90%;
   }
 
   .personalen-tipsar-desktop {
