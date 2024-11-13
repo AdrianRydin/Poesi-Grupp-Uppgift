@@ -39,7 +39,7 @@
       </section>
 
       <button class="hamburger">
-        <aside class="bar"></aside>
+        <div class="bar"></div>
       </button>
 
       <nav class="mobile-nav">
@@ -51,22 +51,23 @@
       </nav>
 
       <nav class="desktop-nav">
-        <a href="#evenemang">Evenemang</a>
+        <a href="#evenemang-desktop">Evenemang</a>
         <span class="vertical-line"></span>
-        <a href="#nytt-hos-oss">Nytt hos oss</a>
+        <a href="#nytt-hos-oss">Nytt <span class="no-wrap">hos oss</span></a>
         <span class="vertical-line"></span>
-        <a href="#personalen-tipsar">Personalen tipsar</a>
+        <a href="#personalen-tipsar-desktop">Personalen tipsar</a>
         <span class="vertical-line"></span>
-        <a href="#kontaktform">Vill du veta mer?</a>
+        <a href="#kontaktform"
+          >Vill du <span class="no-wrap">veta mer?</span></a
+        >
         <span class="vertical-line"></span>
         <a href="#footer">Kontakt</a>
       </nav>
     </header>
 
-    <section class="opening-times poppins-light">
+    <aside class="opening-times poppins-light">
       <p>Öppet i dag: 10.00 - 18.00</p>
-    </section>
-
+    </aside>
 
     <!-- EVENEMANG MOBILE -->
     <main class="main">
@@ -74,14 +75,16 @@
         <h2>Evenemang</h2>
 
         <article class="article evenemang__event">
-          <figure class="event-picture">
-            <img
-            src="/img/stacken_1280x960.jpg"
-              width="1280"
-              height="960"
-              alt="Boken 'Stacken' och några kottar på ett bord"
-            />
-          </figure>
+          <a href="event_01.html">
+            <figure class="event-picture">
+              <img
+                src="/img/stacken_1280x960.jpg"
+                width="1280"
+                height="960"
+                alt="Boken 'Stacken' och några kottar på ett bord"
+              />
+            </figure>
+          </a>
           <section class="event-info">
             <h3>Bokcirkel</h3>
             <p>Vi läser "Stacken" av Annika Norlin.</p>
@@ -89,20 +92,29 @@
               <time datetime="2024-11-12 14:00"
                 >Kl. 14:00 - 16:30 | 12 november</time
               >
-              <figure class="figure arrow-link"></figure>
+              <a href="event_01.html">
+                <figure class="figure arrow-link">
+                  <span class="material-symbols-outlined link-arrow">
+                    arrow_forward_ios
+                  </span>
+                </figure>
+              </a>
             </div>
           </section>
         </article>
 
         <article class="article evenemang__event">
-          <figure class="event-picture">
-            <img
-              src="/img/Poesi_1128x750.webp"
-              width="1128"
-              height="750"
-              alt="Boksidor i form av ett hjärta"
-            />
-          </figure>
+          <a href="event_01.html">
+            <figure class="event-picture">
+              <img
+                src="/img/Poesi_1128x750.webp"
+                width="1128"
+                height="750"
+                alt="Boksidor i form av ett hjärta"
+              />
+            </figure>
+          </a>
+
           <section class="event-info">
             <h3>Diktläsning</h3>
             <p>Läsning av egna och andras dikter.</p>
@@ -110,7 +122,13 @@
               <time datetime="2024-11-14 19:00"
                 >Kl. 19:00 - 21:00 | 14 november</time
               >
-              <figure class="figure arrow-link"></figure>
+              <a href="event_01.html">
+                <figure class="figure arrow-link">
+                  <span class="material-symbols-outlined link-arrow">
+                    arrow_forward_ios
+                  </span>
+                </figure>
+              </a>
             </div>
           </section>
         </article>
@@ -121,7 +139,7 @@
 
       <!-- EVENEMANG DESKTOP -->
 
-      <div class="evenemang-desktop-container" id="evenemang">
+      <div class="evenemang-desktop-container" id="evenemang-desktop">
         <section class="evenemang-desktop">
           <section class="event-container">
             <article>
@@ -283,8 +301,8 @@
         <hr />
       </section>
 
-      <section class="personalen-tipsar-desktop" id="personalen-tipsar">
-        <h2 style="text-align: center;">Peronalen läser och tipsar</h2>
+      <section class="personalen-tipsar-desktop" id="personalen-tipsar-desktop">
+        <h2 style="text-align: center">Peronalen läser och tipsar</h2>
         <section class="personalen-tipsar__image-desktop-container">
           <figure class="personalen-tipsar__image">
             <img
@@ -318,9 +336,8 @@
               alt="Person X läser just nu 'Kinfolk'"
             />
           </figure>
-        </div>
-      </section>
-      <button class="button--blue" style="align-self: center;">Läs mer</button>
+        </section>
+        <button class="button--blue" style="align-self: center">Läs mer</button>
       </section>
 
       <section class="kontaktform kontakt" id="kontaktform">
@@ -366,11 +383,16 @@
       <section class="contact">
         <h2>Kontakt</h2>
         <address>
-          <p>Telefon: <a href="tel:+46700000000"><span class="no-wrap">070-000-00-00</span></a></p>
+          <p>
+            Telefon:
+            <a href="tel:+46700000000"
+              ><span class="no-wrap">070-000-00-00</span></a
+            >
+          </p>
           <p>
             Adress:
             <a
-              href="https://maps.google.com?q=Sättunagatan 3, Linköping"
+              href="https://maps.google.com?q=Sättunagatan+3,+Linköping"
               target="_blank"
               rel="noopener noreferrer"
               >Sättunagatan 3, Linköping</a
