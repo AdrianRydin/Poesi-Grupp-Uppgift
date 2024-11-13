@@ -69,6 +69,7 @@
 
     .kalender_container_mobil {
         grid-column: span 1;
+        place-self: center;
     }
 
     .kalender-h2 {
