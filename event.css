@@ -61,7 +61,7 @@ aside .event-h2 {
 }
 
 .event__main__section__event {
-  margin-top: 1rem 0;
+  margin-top: 1rem;
   padding: 1.2rem;
   box-shadow: var(--SHADOW);
   display: flex;
