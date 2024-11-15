@@ -272,6 +272,8 @@ hr {
   margin-bottom: 1rem;
 }
 
+
+
 .event-container {
   display: flex;
   flex-direction: column;
@@ -410,6 +412,7 @@ textarea {
   height: 25px;
   cursor: pointer;
 }
+
 .aligncenter {
   align-self: center;
 }
@@ -438,11 +441,12 @@ textarea {
 
 .button--blue {
   font: inherit;
+  text-align: center;
   min-width: 10rem;
   background-color: var(--COLOR-BLUE);
   color: white;
   border: none;
-  border-radius: 1rem;
+  border-radius: 9999px;
   padding: 0.8rem;
   margin: 1rem auto;
 }
@@ -468,14 +472,14 @@ textarea {
   background-color: hsl(231, 100%, 90%);
 }
 
-button:hover,
-button:focus {
+.button--blue:hover,
+.button--blue:focus {
   filter: brightness(120%);
   box-shadow: var(--SHADOW);
   cursor: pointer;
 }
 
-button:active {
+.button--blue:active {
   background-color: var(--COLOR-RED);
 }
 
@@ -518,7 +522,7 @@ button:active {
   }
 
   .home__main__section {
-    max-width: 80%;
+    max-width: 90%;
   }
 
   .evenemang-desktop-container {
@@ -546,8 +550,9 @@ button:active {
     width: 90%;
     max-width: 90%;
   }
+
   form {
-    max-width: 80%;
+    max-width: 90%;
   }
 
   .personalen-tipsar-desktop {
